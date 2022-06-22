@@ -38,7 +38,7 @@ const Languages = ({flex = "row"}) => {
 	})
 
 	return (
-		<div className={`flex flex-${flex} justify-between items-center gap-10`}>{langs}</div>
+		<div className={`flex flex-${flex} justify-between items-center gap-5 md:gap-10`}>{langs}</div>
 	)
 }
 
