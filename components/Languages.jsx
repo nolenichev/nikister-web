@@ -10,7 +10,7 @@ const flags = [us, ru, cz, sp]
 
 const ProgressCircle = ({ percentage = 0, title, img }) => {
 	return (
-		<div className="bg-white rounded-3xl bg-opacity-10 backdrop-blur-xl w-20 p-3">
+		<div className="bg-black rounded-3xl bg-opacity-10 backdrop-blur-xl w-full p-5 xl:p-6">
 			<CircularProgressbar
 				value={percentage}
 				text={title}
@@ -21,14 +21,16 @@ const ProgressCircle = ({ percentage = 0, title, img }) => {
 					fontSize: "2em",
 				})}
 			/>
-			<div className="absolute rounded-full overflow-hidden m-6 left-0 right-0 top-0 bottom-0">
-				<Image src={img} alt="Flag" />
+			<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
+				<div className="w-2/3">
+					<Image src={img} alt="Flag" className="relative w-full rounded-full" />
+				</div>
 			</div>
 		</div>
 	)
 }
 
-const Languages = ({}) => {
+const Languages = ({flex = "row"}) => {
 	const langs = data.map((item, index) => {
 		return (
 			<ProgressCircle img={flags[index]} percentage={item.level} key={index} />
@@ -36,7 +38,7 @@ const Languages = ({}) => {
 	})
 
 	return (
-		<div className="flex flex-col justify-between items-center gap-4 mb-8">{langs}</div>
+		<div className={`flex flex-${flex} justify-between items-center gap-10`}>{langs}</div>
 	)
 }
 

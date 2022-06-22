@@ -1,3 +1,4 @@
+import BasicInfo from "./BasicInfo"
 import personalInfo from "../data/personalInfo.json"
 import Languages from "./Languages"
 
@@ -12,22 +13,26 @@ const About = () => {
 	})
 
 	return (
-		<div className="flex gap-8">
-			<Languages />
-			<div className="card flex-3 p-10">
-				<h2 className="title">Shortly About Me</h2>
-				<p className="text text-xl">
-					{"//"} I am passionate about Programming and IT technologies. I am
-					always happy to learn something new. <br />
-					Therefore, I am working <span className="word">smart</span>, not{" "}
-					<span className="word">hard</span>. As for my hobbies, I am fond of
-					Game Design, NFT and travelling.
-				</p>
+		<div className="flex gap-10">
+			<div className="flex flex-col justify-between flex-2">
+				<div className="card p-10">
+					<h2 className="title">Shortly About Me</h2>
+					<p className="text text-xl mb-10">
+						{"//"} I am passionate about Programming and IT technologies. I am
+						always happy to learn something new. <br />
+						Therefore, I am working <span className="word">smart</span>, not{" "}
+						<span className="word">hard</span>. As for my hobbies, I am fond of
+						Game Design, NFT and travelling.
+					</p>
+					<Languages />
+				</div>
+				<div className="card p-10 flex-1">
+					<h2 className="title">What I can do</h2>
+					<ul className="list-none text-xl flex flex-col gap-2">{skill}</ul>
+				</div>
 			</div>
-			<div className="card flex-2 p-10">
-				<h2 className="title">What I can do</h2>
-				<ul className="list-none text-xl flex flex-col gap-2">{skill}</ul>
-			</div>
+
+			<BasicInfo />
 		</div>
 	)
 }

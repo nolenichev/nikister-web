@@ -1,0 +1,30 @@
+[
+	{
+		"title": "Age",
+		"value": "22 y.o."
+	},
+	{
+		"title": "Location",
+		"value": "Prague, Czech Republic"
+	},
+	{
+		"title": "Telegram",
+		"value": "@nikister",
+		"link": "https://t.me/nikister"
+	},
+	{
+		"title": "GitHub",
+		"value": "nolenichev",
+		"link": "https://github.com/nolenichev/"
+	},
+	{
+		"title": "LinkedIn",
+		"value": "nolenichev",
+		"link": "https://www.linkedin.com/in/nolenichev/"
+	},
+	{
+		"title": "Mail",
+		"value": "nolenichevv@gmail.com",
+		"link": "mailto:nolenichevv@gmail.com"
+	}
+]

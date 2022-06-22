@@ -17,22 +17,30 @@ body {
   left: 0;
 }
 
+.text-color {
+  @apply text-green-700;
+}
+
+.bg-color {
+  @apply bg-green-700;
+}
+
 .cont {
-  @apply container mx-auto px-10;
+  @apply container mx-auto px-5;
 }
 
 .card {
-  @apply bg-white rounded-3xl bg-opacity-10 backdrop-blur-xl mb-8;
+  @apply bg-white rounded-3xl bg-opacity-10 backdrop-blur-xl mb-10;
 }
 
 .word {
-  @apply uppercase text-green-800;
+  @apply uppercase text-color;
 }
 
 .title {
-  @apply font-title text-3xl uppercase mb-3;
+  @apply font-title text-3xl uppercase mb-5;
 }
 
 .text {
-  @apply font-main text-gray-400;
+  @apply font-main text-gray-300 leading-9;
 }

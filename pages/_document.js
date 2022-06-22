@@ -13,6 +13,11 @@ export default function Document() {
 					crossOrigin="true"
 				/>
 				<link
+					href="https://fonts.cdnfonts.com/css/bizmo-trial"
+					rel="stylesheet"
+					crossOrigin="true"
+				/>
+				<link
 					href="https://fonts.cdnfonts.com/css/pixel12x10"
 					rel="stylesheet"
 					crossOrigin="true"
