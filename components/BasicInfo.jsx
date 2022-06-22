@@ -60,12 +60,14 @@ const BasicInfo = ({}) => {
 				<div className="flex flex-col gap-4">{basicInformation}</div>
 			</div>
 			<div className="bg-black bg-opacity-10 p-6 mt-10 rounded-3xl backdrop-blur-xl">
-				<Image
-					src={tgQr}
-					alt="QR"
-					placeholder="blur"
-					className="relative w-full rounded-3xl"
-				/>
+				<a href="https://t.me/nikister" rel="noreferrer" target="_blank" className="scale-110 transition transform hover:opacity-50">
+					<Image
+						src={tgQr}
+						alt="QR"
+						placeholder="blur"
+						className="relative w-full rounded-3xl"
+					/>
+				</a>
 				<div className="font-main text-center mt-3 text-gray-300">
 					{"//"} QR to my Telegram
 				</div>

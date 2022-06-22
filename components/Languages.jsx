@@ -38,7 +38,10 @@ const Languages = ({flex = "row"}) => {
 	})
 
 	return (
-		<div className={`flex flex-${flex} justify-between items-center gap-5 md:gap-10`}>{langs}</div>
+		<>
+			<h2 className="title">Languages level</h2>
+			<div className={`flex flex-${flex} justify-between items-center gap-5 md:gap-10`}>{langs}</div>
+		</>
 	)
 }
 

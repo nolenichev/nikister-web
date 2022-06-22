@@ -4,7 +4,7 @@ import personalInfo from "../data/personalInfo.json"
 
 const Hero = () => {
 	return (
-		<div className="card flex flex-col md:flex-row items-center md:gap-20 py-10 px-10 md:px-20 relative w-full text-center md:text-left">
+		<div className="card flex flex-col md:flex-row items-center gap-10 py-10 px-10 relative w-full text-center md:text-left">
 			<div className="flex-1">
 				<Image
 					src={avatar}
@@ -13,7 +13,7 @@ const Hero = () => {
 					className="relative rounded-full w-full"
 				/>
 			</div>
-			<div className="py-5 flex-2">
+			<div className="flex-2">
 				<div>
 					<h1 className="text-4xl md:text-5xl font-bold mb-3 font-heroTitle">
 						Nick Olenichev
