@@ -54,7 +54,7 @@ const BasicInfo = ({}) => {
 	})
 
 	return (
-		<div className="card flex-1 p-10 justify-between flex flex-col">
+		<div className="card flex-1 p-5 md:p-10 justify-between flex flex-col">
 			<div>
 				<h2 className="title whitespace-nowrap">Basic Information</h2>
 				<div className="flex flex-col gap-4">{basicInformation}</div>

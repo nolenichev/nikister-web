@@ -13,9 +13,9 @@ const About = () => {
 	})
 
 	return (
-		<div className="flex gap-10">
+		<div className="flex md:gap-10 flex-col-reverse md:flex-row">
 			<div className="flex flex-col justify-between flex-2">
-				<div className="card p-10">
+				<div className="card p-5 md:p-10">
 					<h2 className="title">Shortly About Me</h2>
 					<p className="text text-xl mb-10">
 						{"//"} I am passionate about Programming and IT technologies. I am
@@ -26,7 +26,7 @@ const About = () => {
 					</p>
 					<Languages />
 				</div>
-				<div className="card p-10 flex-1">
+				<div className="card p-5 md:p-10 flex-1">
 					<h2 className="title">What I can do</h2>
 					<ul className="list-none text-xl flex flex-col gap-2">{skill}</ul>
 				</div>

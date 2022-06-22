@@ -10,7 +10,7 @@ const flags = [us, ru, cz, sp]
 
 const ProgressCircle = ({ percentage = 0, title, img }) => {
 	return (
-		<div className="bg-black rounded-3xl bg-opacity-10 backdrop-blur-xl w-full p-5 xl:p-6">
+		<div className="bg-black rounded-3xl bg-opacity-10 backdrop-blur-xl w-full p-1 md:p-5 xl:p-6">
 			<CircularProgressbar
 				value={percentage}
 				text={title}
@@ -21,8 +21,8 @@ const ProgressCircle = ({ percentage = 0, title, img }) => {
 					fontSize: "2em",
 				})}
 			/>
-			<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
-				<div className="w-2/3">
+			<div className="flex justify-center items-center absolute top-0 left-0 right-0 bottom-0">
+				<div className="w-1/3 h-1/3">
 					<Image src={img} alt="Flag" className="relative w-full rounded-full" />
 				</div>
 			</div>
