@@ -1,0 +1,47 @@
+[
+  {
+    "title": "HTML5",
+    "percentage": 99
+  },
+  {
+    "title": "CSS/SASS",
+    "percentage": 95
+  },
+  {
+    "title": "JAVASCRIPT",
+    "percentage": 90
+  },
+  {
+    "title": "REACT.JS",
+    "percentage": 80
+  },
+  {
+    "title": "FIGMA",
+    "percentage": 80
+  },
+  {
+    "title": "HTML5",
+    "percentage": 90
+  },
+  {
+    "title": "CSS FRAMEWORKS / TAILWIND.CSS",
+    "percentage": 95
+  },
+  {
+    "title": "GIT",
+    "percentage": 90
+  },
+  {
+    "title": "RUBY ON RAILS",
+    "percentage": 90
+  },
+  {
+    "title": "SQL",
+    "percentage": 90
+  },
+  {
+    "title": "GOOGlING",
+    "percentage": 100
+  }
+]
+

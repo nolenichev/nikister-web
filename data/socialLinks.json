@@ -1,0 +1,18 @@
+[
+  { 
+    "type": "telegram",
+    "link": "https://t.me/nikister"
+  },
+  { 
+    "type": "Mail",
+    "link": "mailto:nolenichevv@gmail.com"
+  },
+  { 
+    "type": "LinkedIn",
+    "link": "https://www.linkedin.com/in/nolenichev/"
+  },
+	{ 
+    "type": "Github",
+    "link": "https://github.com/nolenichev/"
+  }
+]

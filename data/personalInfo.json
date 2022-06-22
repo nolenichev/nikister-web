@@ -1,0 +1,34 @@
+{
+	"description": "// Hello world! My name is Nikita Olenichev. I am a Frontend Developer, having 2 years of commercial experience and about 20 projects in my portfolio",
+	"qwe": "<span className=\"text-red-500\">qwqeqwr</span>",
+	"todo": [
+		{
+			"icon": "🪪",
+			"text": "Website Development"
+		},
+		{
+			"icon": "🎨",
+			"text": "Styling of your Web"
+		},
+		{
+			"icon": "📝",
+			"text": "JS Scripts"
+		},
+		{
+			"icon": "🎲",
+			"text": "SPA with React/Next.js"
+		},
+		{
+			"icon": "🤖",
+			"text": "Telegram Bots with Node.js"
+		},
+		{
+			"icon": "🐵",
+			"text": "Generate NFT collection"
+		},
+		{
+			"icon": "☁️",
+			"text": "Deployment"
+		}
+	]
+}
