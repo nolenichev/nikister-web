@@ -4,10 +4,10 @@ const ParticlesBg = () => {
 	return (
 		<Particles
 			params={{
-				fpsLimit: 25,
+				fpsLimit: 24,
 				particles: {
 					number: {
-						value: 70,
+						value: 60,
 						density: {
 							enable: true,
 							value_area: 800,

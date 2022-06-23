@@ -1,31 +1,33 @@
 [
   {
     "title": "HTML5",
-    "percentage": 99
+    "percentage": 95,
+    "iconColor": "EF652A"
   },
   {
-    "title": "CSS/SASS",
-    "percentage": 95
+    "title": "CSS / SASS",
+    "percentage": 95,
+    "iconColor": "00A6FC"
   },
   {
     "title": "JAVASCRIPT",
-    "percentage": 90
+    "percentage": 95,
+    "iconColor": "FFC900"
   },
   {
     "title": "REACT.JS",
-    "percentage": 80
+    "percentage": 85,
+    "iconColor": "00BFD8"
   },
   {
     "title": "FIGMA",
-    "percentage": 80
+    "percentage": 80,
+    "iconColor": "A259FF"
   },
   {
-    "title": "HTML5",
-    "percentage": 90
-  },
-  {
-    "title": "CSS FRAMEWORKS / TAILWIND.CSS",
-    "percentage": 95
+    "title": "TAILWIND.CSS",
+    "percentage": 95,
+    "iconColor": "00B9AC"
   },
   {
     "title": "GIT",
@@ -33,15 +35,17 @@
   },
   {
     "title": "RUBY ON RAILS",
-    "percentage": 90
+    "percentage": 25,
+    "iconColor": "FF5252"
   },
   {
     "title": "SQL",
-    "percentage": 90
+    "percentage": 70,
+    "iconColor": "F2AA03"
   },
   {
     "title": "GOOGlING",
-    "percentage": 100
+    "percentage": 100,
+    "iconColor": "EF652A"
   }
 ]
-

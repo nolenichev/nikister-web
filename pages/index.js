@@ -12,10 +12,10 @@ const App = () => {
 				<title>{title}</title>
 			</Head>
 			<ParticlesBg />
-			<main className="cont py-14 relative z-10">
+			<main className="cont py-10 relative z-10">
 				<Hero />
 				<About />
-				{/* <Skills /> */}
+				<Skills />
 			</main>
 		</>
 	)
