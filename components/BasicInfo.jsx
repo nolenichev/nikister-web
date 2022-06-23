@@ -30,10 +30,9 @@ const Row = ({ item, index }) => {
 const BasicInfo = ({}) => {
 	const basicInformation = basicInfo.map((item, index) => {
 		return (
-			<>
+			<div key={index}>
 				{item.link ? (
 					<a
-						key={index}
 						href={item.link}
 						rel="noreferrer"
 						target="_blank"
@@ -45,11 +44,11 @@ const BasicInfo = ({}) => {
 						</div>
 					</a>
 				) : (
-					<div key={index} className="flex items-center gap-4 px-2 py-1">
+					<div className="flex items-center gap-4 px-2 py-1">
 						<Row item={item} index={index} />
 					</div>
 				)}
-			</>
+			</div>
 		)
 	})
 

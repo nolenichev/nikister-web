@@ -82,7 +82,7 @@ const Skills = () => {
 	return (
 		<section className="card p-10 w-full">
 			<div className="title">Technical Skills</div>
-			<div className="grid gap-y-10 gap-x-14 grid-cols-3">{skills}</div>
+			<div className="grid gap-y-10 gap-x-14 grid-cols-1 md:grid-cols-3">{skills}</div>
 			{/* <div className="title mt-16">Soft Skills</div> */}
 		</section>
 	)
