@@ -13,7 +13,7 @@ const About = () => {
 	})
 
 	return (
-		<div className="flex md:gap-10 flex-col-reverse md:flex-row">
+		<div className="flex md:gap-10 flex-col-reverse md:flex-row scroll-m" id="about">
 			<section className="flex flex-col justify-between flex-2">
 				<div className="card p-5 md:p-10">
 					<h2 className="title">Shortly About Me</h2>

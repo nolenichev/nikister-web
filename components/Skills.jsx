@@ -1,25 +1,4 @@
-import { FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa"
-import { SiTailwindcss } from "react-icons/si"
-import { FcGoogle } from "react-icons/fc"
-import { DiRuby } from "react-icons/di"
-import { CgFigma } from "react-icons/cg"
-import { BsGithub } from "react-icons/bs"
-import { RiDatabase2Fill } from "react-icons/ri"
-
-import skillsData from "../data/skills.json"
-
-const icons = [
-	FaHtml5,
-	FaCss3,
-	FaJs,
-	FaReact,
-	CgFigma,
-	SiTailwindcss,
-	BsGithub,
-	DiRuby,
-	RiDatabase2Fill,
-	FcGoogle,
-]
+import { techical, soft, other } from "../data/skills"
 
 const ProgressBar = ({
 	percentage = 0,
@@ -63,12 +42,26 @@ const ProgressBar = ({
 	)
 }
 
+const Skill = ({ title }) => {
+	return (
+		<li>
+			{"//"} {title}
+		</li>
+	)
+}
+
+const skillsList = (skills) => {
+	return  skills.map((item, index) => {
+		return <Skill key={index} title={item} />
+	})
+}
+
 const Skills = () => {
-	const skills = skillsData.map((item, index) => {
+	const techicalSkills = techical.map((item, index) => {
 		return (
 			<ProgressBar
 				percentage={item.percentage}
-				icon={icons[index]}
+				icon={item.icon}
 				title={item.title}
 				iconColor={item.iconColor}
 				key={index}
@@ -77,31 +70,22 @@ const Skills = () => {
 	})
 
 	return (
-		<section className="card p-5 md:p-10 w-full">
+		<section className="card p-5 md:p-10 w-full scroll-m" id="skills">
 			<h2 className="title">Technical Skills</h2>
 			<div className="grid gap-y-10 gap-x-14 grid-cols-1 md:grid-cols-3">
-				{skills}
+				{techicalSkills}
 			</div>
-			<div className="flex mt-16 gap-10">
-				<div className="flex-1 card p-10">
+			<div className="flex flex-col md:flex-row mt-16 gap-10">
+				<div className="flex-1 card-2">
 					<h2 className="title">Soft Skills</h2>
 					<ul className="text">
-						<li>{"//"} Logical thinking</li>
-						<li>{"//"} Accountability</li>
-						<li>{"//"} Team player</li>
-						<li>{"//"} Fast learner</li>
-						<li>{"//"} Creative</li>
-						<li>{"//"} Sociable</li>
+						{skillsList(soft)}
 					</ul>
 				</div>
-				<div className="flex-1 card p-10">
+				<div className="flex-1 card-2">
 					<h2 className="title">Other Skills</h2>
 					<ul className="text">
-						<li>{"//"} UI / UX</li>
-						<li>{"//"} Responsive Web Design</li>
-						<li>{"//"} Heroku / Deployment</li>
-						<li>{"//"} Functional Programming</li>
-						<li>{"//"} OOP</li>
+					{skillsList(other)}
 					</ul>
 				</div>
 			</div>

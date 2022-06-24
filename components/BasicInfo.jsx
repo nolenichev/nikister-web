@@ -36,7 +36,7 @@ const BasicInfo = ({}) => {
 						href={item.link}
 						rel="noreferrer"
 						target="_blank"
-						className="flex items-center gap-4 px-3 py-1 rounded-2xl transition hover:bg-black hover:bg-opacity-20 relative"
+						className="flex items-center gap-4 px-3 py-1 rounded-2xl hover:bg-black hover:bg-opacity-20 relative"
 					>
 						<Row item={item} index={index} />
 						<div className="absolute right-3 top-1/2 transform -translate-y-1/2 text-xl text-color">
@@ -58,8 +58,8 @@ const BasicInfo = ({}) => {
 				<h2 className="title whitespace-nowrap">Basic Information</h2>
 				<div className="flex flex-col gap-4">{basicInformation}</div>
 			</div>
-			<div className="bg-black bg-opacity-10 p-6 mt-10 rounded-3xl backdrop-blur-xl">
-				<a href="https://t.me/nikister" rel="noreferrer" target="_blank" className="scale-110 transition transform hover:opacity-50">
+			<div className="bg-white bg-opacity-5 p-5 mt-10 rounded-3xl backdrop-blur-xl">
+				<a href="https://t.me/nikister" rel="noreferrer" target="_blank" className="scale-110 transform hover:opacity-50">
 					<Image
 						src={tgQr}
 						alt="QR"

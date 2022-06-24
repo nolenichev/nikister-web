@@ -2,16 +2,14 @@ import ParticlesBg from "../components/ParticlesBg"
 import Hero from "../components/Hero"
 import About from "../components/About"
 import Skills from "../components/Skills"
-import Head from "next/head"
-import { title } from "./_document"
+import { pageTitle } from "./_document"
+import Header from "../components/Header"
 
 const App = () => {
 	return (
 		<>
-			<Head>
-				<title>{title}</title>
-			</Head>
 			<ParticlesBg />
+			<Header pageTitle={pageTitle}></Header>
 			<main className="cont py-10 relative z-10">
 				<Hero />
 				<About />

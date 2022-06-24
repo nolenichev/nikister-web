@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document"
 
-export const title = "Web Developer | Nick Olenichev"
+export const pageTitle = "Web Developer | Nick Olenichev"
 const description = ""
 
 export default function Document() {
@@ -22,9 +22,9 @@ export default function Document() {
 					rel="stylesheet"
 					crossOrigin="true"
 				/>
-				<meta name="title" content={title} />
-				<meta name="og:title" content={title} />
-				<meta name="twitter:title" content={title} />
+				<meta name="title" content={pageTitle} />
+				<meta name="og:title" content={pageTitle} />
+				<meta name="twitter:title" content={pageTitle} />
 				<meta name="description" content={description} />
 				<meta name="og:description" content={description} />
 				<meta name="twitter:description" content={description} />
