@@ -8,7 +8,7 @@ const Header = ({ pageTitle }) => {
 			<Head>
 				<title>{pageTitle}</title>
 			</Head>
-			<header className="sticky top-0 w-full py-4 bg-gray-400 z-30 bg-opacity-10 backdrop-blur-lg">
+			<header className="sticky top-0 w-full py-4 bg-black z-30">
 				<div className="cont flex justify-between items-center">
 					<a href="#" className="flex gap-5 items-center select-none">
 						<div className="w-10 h-10">

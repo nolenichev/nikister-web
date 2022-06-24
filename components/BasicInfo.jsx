@@ -58,7 +58,7 @@ const BasicInfo = ({}) => {
 				<h2 className="title whitespace-nowrap">Basic Information</h2>
 				<div className="flex flex-col gap-4">{basicInformation}</div>
 			</div>
-			<div className="bg-white bg-opacity-5 p-5 mt-10 rounded-3xl backdrop-blur-xl">
+			<div className="bg-black p-5 mt-10 rounded-3xl">
 				<a href="https://t.me/nikister" rel="noreferrer" target="_blank" className="scale-110 transform hover:opacity-50">
 					<Image
 						src={tgQr}

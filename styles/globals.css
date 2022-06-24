@@ -27,16 +27,16 @@ body {
   @apply container mx-auto px-5;
 }
 
-.card {
-  @apply bg-white rounded-3xl bg-opacity-10 backdrop-blur-md mb-5 md:mb-10;
-}
-
 .scroll-m {
   scroll-margin: 100px;
 }
 
+.card {
+  @apply bg-white rounded-3xl bg-opacity-10 backdrop-blur-md mb-5 md:mb-10;
+}
+
 .card-2 {
-  @apply bg-gray-200 rounded-3xl bg-opacity-5 backdrop-blur-md p-5 md:p-8;
+  @apply bg-black rounded-3xl p-5 md:p-8;
 }
 
 .word {
