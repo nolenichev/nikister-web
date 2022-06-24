@@ -17,7 +17,7 @@ const ProgressCircle = ({ percentage = 0, title, img }) => {
 				styles={buildStyles({
 					pathColor: `#166534`,
 					textColor: "#166534",
-					trailColor: "#000",
+					trailColor: "#222",
 					fontSize: "2em",
 				})}
 			/>

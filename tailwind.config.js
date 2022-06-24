@@ -7,8 +7,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				heroTitle: ["Pixel12x10", "sans-serif"],
-				title: ["Bizmo Trial", "sans-serif"],
+				title: ["Coco Gothic", "sans-serif"],
 				main: ["Nitti", "sans-serif"],
 			},
 			flex: {

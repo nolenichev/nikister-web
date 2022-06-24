@@ -31,7 +31,7 @@ const ProgressBar = ({
 					<h3 className="text text-lg">{title}</h3>
 					<span className="text">{percentage}%</span>
 				</div>
-				<div className="relative bg-black rounded-full w-full h-3 overflow-hidden">
+				<div className="relative bg-gray-900 rounded-full w-full h-3 overflow-hidden">
 					<div
 						className="absolute top-0 bottom-0 left-0 bg-gradient-to-r from-green-600 to-green-900 rounded-full"
 						style={{ width: `${percentage}%` }}
@@ -72,19 +72,19 @@ const Skills = () => {
 	return (
 		<section className="card p-5 md:p-10 w-full scroll-m" id="skills">
 			<h2 className="title">Technical Skills</h2>
-			<div className="grid gap-y-10 gap-x-14 grid-cols-1 md:grid-cols-3">
+			<div className="grid gap-y-10 gap-x-14 grid-cols-1 md:grid-cols-3 bg-black rounded-3xl p-5 md:p-10">
 				{techicalSkills}
 			</div>
 			<div className="flex flex-col md:flex-row mt-16 gap-10">
-				<div className="flex-1 card-2">
+				<div className="flex-1">
 					<h2 className="title">Soft Skills</h2>
-					<ul className="text">
+					<ul className="text card-2">
 						{skillsList(soft)}
 					</ul>
 				</div>
-				<div className="flex-1 card-2">
+				<div className="flex-1">
 					<h2 className="title">Other Skills</h2>
-					<ul className="text">
+					<ul className="text card-2">
 					{skillsList(other)}
 					</ul>
 				</div>

@@ -18,7 +18,7 @@ export default function Document() {
 					crossOrigin="true"
 				/>
 				<link
-					href="https://fonts.cdnfonts.com/css/pixel12x10"
+					href="https://fonts.cdnfonts.com/css/coco-gothic"
 					rel="stylesheet"
 					crossOrigin="true"
 				/>

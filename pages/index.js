@@ -10,7 +10,7 @@ const App = () => {
 		<>
 			<ParticlesBg />
 			<Header pageTitle={pageTitle}></Header>
-			<main className="cont py-10 relative z-10">
+			<main className="cont py-5 md:py-10 relative z-10">
 				<Hero />
 				<About />
 				<Skills />

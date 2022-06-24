@@ -17,18 +17,21 @@ const About = () => {
 			<section className="flex flex-col justify-between flex-2">
 				<div className="card p-5 md:p-10">
 					<h2 className="title">Shortly About Me</h2>
-					<p className="text text-xl mb-10">
+					<div className="card-2 mb-10">
+
+					<p className="text text-xl">
 						{"//"} I am passionate about Programming and IT technologies. I am
 						always happy to learn something new. <br />
 						Therefore, I am working <span className="word">smart</span>, not{" "}
 						<span className="word">hard</span>. As for my hobbies, I am fond of
 						Game Design, NFT and travelling.
 					</p>
+					</div>
 					<Languages />
 				</div>
 				<div className="card p-5 md:p-10 flex-1">
 					<h2 className="title">What I can do</h2>
-					<ul className="list-none text-xl flex flex-col gap-2">{skill}</ul>
+					<ul className="list-none text-xl flex flex-col gap-2 card-2">{skill}</ul>
 				</div>
 			</section>
 

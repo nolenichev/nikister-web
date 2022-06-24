@@ -36,7 +36,7 @@ const BasicInfo = ({}) => {
 						href={item.link}
 						rel="noreferrer"
 						target="_blank"
-						className="flex items-center gap-4 px-3 py-1 rounded-2xl hover:bg-black hover:bg-opacity-20 relative"
+						className="flex items-center gap-4 px-3 py-1 rounded-2xl hover:bg-black relative"
 					>
 						<Row item={item} index={index} />
 						<div className="absolute right-3 top-1/2 transform -translate-y-1/2 text-xl text-color">
@@ -56,10 +56,10 @@ const BasicInfo = ({}) => {
 		<section className="card flex-1 p-5 md:p-10 justify-between flex flex-col">
 			<div>
 				<h2 className="title whitespace-nowrap">Basic Information</h2>
-				<div className="flex flex-col gap-4">{basicInformation}</div>
+				<div className="flex flex-col gap-5">{basicInformation}</div>
 			</div>
 			<div className="bg-black p-5 mt-10 rounded-3xl">
-				<a href="https://t.me/nikister" rel="noreferrer" target="_blank" className="scale-110 transform hover:opacity-50">
+				<a href="https://t.me/nikister" rel="noreferrer" target="_blank" className="hover:opacity-70">
 					<Image
 						src={tgQr}
 						alt="QR"

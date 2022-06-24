@@ -11,14 +11,14 @@ const SocialLink = ({ children, link }) => {
 			href={link}
 			rel="noreferrer"
 			target="_blank"
-			className="w-12 h-12 bg-color rounded-full flex items-center justify-center hover:text-white relative text-black text-2xl"
+			className="w-10 h-10 bg-color rounded-full flex items-center justify-center hover:text-white relative text-black text-2xl"
 		>
 			{children}
 		</a>
 	)
 }
 
-export function Social({}) {
+function Social({}) {
 	const links = socialLinks.map((item, index) => {
 		return (
 			<SocialLink link={item.link} key={index}>
@@ -27,5 +27,7 @@ export function Social({}) {
 		)
 	})
 
-	return <div className="flex gap-5 mt-5">{links}</div>
+	return <div className="flex gap-5 absolute top-10 right-10">{links}</div>
 }
+
+export default Social
