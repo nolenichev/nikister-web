@@ -44,10 +44,7 @@ const ProgressBar = ({
 
 	return (
 		<div className="w-full flex gap-4 items-center">
-			<div
-				className={`text-5xl`}
-				style={{ color: `#${iconColor}` }}
-			>
+			<div className={`text-5xl`} style={{ color: `#${iconColor}` }}>
 				{icon()}
 			</div>
 			<div className="flex-1">
@@ -81,9 +78,33 @@ const Skills = () => {
 
 	return (
 		<section className="card p-5 md:p-10 w-full">
-			<div className="title">Technical Skills</div>
-			<div className="grid gap-y-10 gap-x-14 grid-cols-1 md:grid-cols-3">{skills}</div>
-			{/* <div className="title mt-16">Soft Skills</div> */}
+			<h2 className="title">Technical Skills</h2>
+			<div className="grid gap-y-10 gap-x-14 grid-cols-1 md:grid-cols-3">
+				{skills}
+			</div>
+			<div className="flex mt-16 gap-10">
+				<div className="flex-1 card p-10">
+					<h2 className="title">Soft Skills</h2>
+					<ul className="text">
+						<li>{"//"} Logical thinking</li>
+						<li>{"//"} Accountability</li>
+						<li>{"//"} Team player</li>
+						<li>{"//"} Fast learner</li>
+						<li>{"//"} Creative</li>
+						<li>{"//"} Sociable</li>
+					</ul>
+				</div>
+				<div className="flex-1 card p-10">
+					<h2 className="title">Other Skills</h2>
+					<ul className="text">
+						<li>{"//"} UI / UX</li>
+						<li>{"//"} Responsive Web Design</li>
+						<li>{"//"} Heroku / Deployment</li>
+						<li>{"//"} Functional Programming</li>
+						<li>{"//"} OOP</li>
+					</ul>
+				</div>
+			</div>
 		</section>
 	)
 }
