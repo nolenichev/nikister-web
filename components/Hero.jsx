@@ -20,7 +20,7 @@ const Hero = () => {
 					</h1>
 					<h2 className="mb-3 text-2xl text-color">Web Developer</h2>
 				</div>
-				<p className="text text-lg">{personalInfo.description}</p>
+				<p className="text text-lg text-left">{personalInfo.description}</p>
 				{/* <button className="px-4 pt-2 pb-1 text-color rounded-xl text-lg font-bold font-title mt-5 uppercase bg-black">
 					Contact Me
 				</button> */}
