@@ -9,8 +9,9 @@ const Hero = () => {
 	const [pageAvatar, setPageAvatar] = useState(avatar)
 
 	return (
-		<section className="card flex flex-col md:flex-row items-center gap-10 md:gap-16 py-10 px-10 md:px-16 relative w-full text-center md:text-left">
-			<div className="flex-1 shake">
+		<section className="card flex flex-col lg:flex-row items-center gap-10 md:gap-16 py-10 px-10 md:px-16 relative w-full text-center md:text-left">
+			<Social />
+			<div className="flex-1 sm:w-1/2 shake">
 				<Image
 					src={pageAvatar}
 					alt="avatar"
@@ -26,15 +27,13 @@ const Hero = () => {
 			</div>
 			<div className="flex-2">
 				<div>
-					<h1 className="text-4xl md:text-5xl font-bold mb-3 font-heroTitle">
+					<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 font-title">
 						Nick Olenichev
 					</h1>
-					<h2 className="mb-3 text-2xl uppercase font-semibold text-color">
+					<h2 className="mb-3 text-2xl font-semibold text-color">
 						Web Developer
 					</h2>
 					<p className="text text-lg mx-auto text-left">{personalInfo.description}</p>
-
-					<Social />
 				</div>
 			</div>
 		</section>

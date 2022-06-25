@@ -72,7 +72,7 @@ const Skills = () => {
 	return (
 		<section className="card p-5 md:p-10 w-full scroll-m" id="skills">
 			<h2 className="title">Technical Skills</h2>
-			<div className="grid gap-y-10 gap-x-14 grid-cols-1 md:grid-cols-3 bg-black rounded-3xl p-5 md:p-10">
+			<div className="grid gap-y-10 gap-x-14 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 bg-black rounded-3xl p-5 md:p-10">
 				{techicalSkills}
 			</div>
 			<div className="flex flex-col md:flex-row mt-16 gap-10">

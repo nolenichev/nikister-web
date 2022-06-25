@@ -59,7 +59,7 @@ const BasicInfo = ({}) => {
 				<div className="flex flex-col gap-5">{basicInformation}</div>
 			</div>
 			<div className="bg-black p-5 mt-10 rounded-3xl">
-				<a href="https://t.me/nikister" rel="noreferrer" target="_blank" className="hover:opacity-70">
+				<a href="https://t.me/nikister" rel="noreferrer" target="_blank" className="hover:opacity-70 flex justify-center">
 					<Image
 						src={tgQr}
 						alt="QR"

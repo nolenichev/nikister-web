@@ -1,7 +1,17 @@
 import Head from "next/head"
 import { FaHamburger } from "react-icons/fa"
 
+const sections = ["about", "skills", "portfolio", "contacts"]
+
 const Header = ({ pageTitle }) => {
+	const links = sections.map((item, index) => {
+		return (
+			<a href={`#${item}`} className="text-hover" key={index}>
+				{item}()
+			</a>
+		)
+	})
+
 	return (
 		<>
 			<Head>
@@ -12,19 +22,8 @@ const Header = ({ pageTitle }) => {
 					<a href="#" className="select-none font-main text-xl font-semibold">
 						{"<"}Nikister {"/>"}
 					</a>
-					<nav className="gap-7 font-bold text text-xl hidden md:flex">
-						<a href="#about" className="text-hover">
-							about()
-						</a>
-						<a href="#skills" className="text-hover">
-							skills()
-						</a>
-						<a href="#portfolio" className="text-hover">
-							portfolio()
-						</a>
-						<a href="#contacts" className="text-hover">
-							contacts()
-						</a>
+					<nav className="gap-5 font-bold text text-xl hidden md:flex">
+						{links}
 					</nav>
 
 					<button className="text-3xl block md:hidden">

@@ -8,17 +8,12 @@ export default function Document() {
 		<Html>
 			<Head>
 				<link
+					href="https://fonts.cdnfonts.com/css/fredoka-one"
+					rel="stylesheet"
+					crossOrigin="true"
+				/>
+				<link
 					href="https://fonts.cdnfonts.com/css/nitti"
-					rel="stylesheet"
-					crossOrigin="true"
-				/>
-				<link
-					href="https://fonts.cdnfonts.com/css/bizmo-trial"
-					rel="stylesheet"
-					crossOrigin="true"
-				/>
-				<link
-					href="https://fonts.cdnfonts.com/css/coco-gothic"
 					rel="stylesheet"
 					crossOrigin="true"
 				/>

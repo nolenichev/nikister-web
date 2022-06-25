@@ -7,7 +7,8 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				title: ["Coco Gothic", "sans-serif"],
+				// hero: ["fredoka one", "sans-serif"],
+				title: ["fredoka one", "sans-serif"],
 				main: ["Nitti", "sans-serif"],
 			},
 			flex: {
