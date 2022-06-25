@@ -1,4 +1,4 @@
-import { projects } from "../data/portfolio.js"
+import { projects } from "../data/Portfolio"
 import Project from "./Project"
 
 const Portfolio = ({}) => {
