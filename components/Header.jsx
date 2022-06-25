@@ -22,7 +22,7 @@ const Header = ({ pageTitle }) => {
 					<a href="#" className="select-none font-main text-xl font-semibold">
 						{"<"}Nikister {"/>"}
 					</a>
-					<nav className="gap-5 font-bold text text-xl hidden md:flex">
+					<nav className="gap-5 text text-xl hidden md:flex">
 						{links}
 					</nav>
 

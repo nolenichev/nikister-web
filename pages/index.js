@@ -4,6 +4,7 @@ import About from "../components/About"
 import Skills from "../components/Skills"
 import { pageTitle } from "./_document"
 import Header from "../components/Header"
+import Portfolio from "../components/Portfolio"
 
 const App = () => {
 	return (
@@ -14,6 +15,7 @@ const App = () => {
 				<Hero />
 				<About />
 				<Skills />
+				<Portfolio />
 			</main>
 		</>
 	)
