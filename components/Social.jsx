@@ -30,7 +30,7 @@ function Social({}) {
 		})
 
 	return (
-		<div className="flex gap-5 reltaive md:absolute top-5 mb-2 md:right-5">
+		<div className="flex gap-4 reltaive md:absolute top-4 mb-2 md:right-4">
 			{links}
 		</div>
 	)
