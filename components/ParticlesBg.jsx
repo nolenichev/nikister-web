@@ -14,7 +14,7 @@ const ParticlesBg = () => {
 						},
 					},
 					color: {
-						value: "#166534",
+						value: "#0b6623",
 					},
 					opacity: {
 						value: 0.5,
@@ -39,7 +39,7 @@ const ParticlesBg = () => {
 					line_linked: {
 						enable: true,
 						distance: 150,
-						color: "#4cbb17",
+						color: "#0b6623",
 						opacity: 0.8,
 						width: 1.3,
 					},

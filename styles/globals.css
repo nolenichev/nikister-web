@@ -52,7 +52,7 @@ body {
 }
 
 .text {
-  @apply font-main text-gray-300 leading-9;
+  @apply font-main text-gray-300 leading-8;
 }
 
 

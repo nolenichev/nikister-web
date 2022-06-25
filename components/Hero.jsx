@@ -33,7 +33,8 @@ const Hero = () => {
 						Web Developer
 					</h2>
 					<p className="text text-lg mx-auto text-left">
-						{"//"} Hello world! My name is Nikita Olenichev. I am a Web Developer, having more than{" "}
+						{"//"} Hello world! My name is Nikita Olenichev. I am a Web
+						Developer, having more than{" "}
 						<span className="text-color uppercase">2 years</span> of commercial
 						experience and more than{" "}
 						<a
@@ -42,7 +43,9 @@ const Hero = () => {
 						>
 							30 projects
 						</a>{" "}
-						in my portfolio. Ready to strart Your Project!
+						in my portfolio.
+						<br />
+						Ready to strart Your Project!
 					</p>
 				</div>
 			</div>
