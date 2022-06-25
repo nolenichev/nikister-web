@@ -20,6 +20,8 @@ export const other = [
 	"Vercel, Heroku - Deployment",
 	"Functional Programming",
 	"OOP",
+	"I have a lot of snippets",
+	"Templating",
 	"Work with 3D (Blander)",
 ]
 export const techical = [

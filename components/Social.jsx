@@ -1,9 +1,9 @@
 import { ImLinkedin2 } from "react-icons/im"
 import { MdMail } from "react-icons/md"
 import { FaGithub, FaTelegramPlane } from "react-icons/fa"
-import socialLinks from "../data/socialLinks.json"
+import socialLinks from "../data/basicinfo.json"
 
-const icons = [MdMail, FaTelegramPlane, FaGithub, ImLinkedin2]
+const icons = [FaTelegramPlane, FaGithub, ImLinkedin2, MdMail]
 
 const SocialLink = ({ children, link }) => {
 	return (
@@ -19,15 +19,21 @@ const SocialLink = ({ children, link }) => {
 }
 
 function Social({}) {
-	const links = socialLinks.map((item, index) => {
-		return (
-			<SocialLink link={item.link} key={index}>
-				{icons[index]()}
-			</SocialLink>
-		)
-	})
+	const links = socialLinks
+		.filter((item) => item.link)
+		.map((item, index) => {
+			return (
+				<SocialLink link={item.link} key={index}>
+					{icons[index]()}
+				</SocialLink>
+			)
+		})
 
-	return <div className="flex gap-5 reltaive md:absolute top-5 mb-2 md:right-5">{links}</div>
+	return (
+		<div className="flex gap-5 reltaive md:absolute top-5 mb-2 md:right-5">
+			{links}
+		</div>
+	)
 }
 
 export default Social

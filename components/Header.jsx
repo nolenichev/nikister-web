@@ -1,13 +1,13 @@
 import Head from "next/head"
 import { FaHamburger } from "react-icons/fa"
 
-const sections = ["about", "skills", "portfolio", "contacts"]
+const sections = ["about", "skills", "portfolio"]
 
 const Header = ({ pageTitle }) => {
 	const links = sections.map((item, index) => {
 		return (
 			<a href={`#${item}`} className="text-hover" key={index}>
-				{item}()
+				{item}({item === "about" && `contacts`})
 			</a>
 		)
 	})
