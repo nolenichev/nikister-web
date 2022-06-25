@@ -42,7 +42,7 @@ const Hero = () => {
 						>
 							30 projects
 						</a>{" "}
-						in my portfolio
+						in my portfolio. Ready to strart Your Project!
 					</p>
 				</div>
 			</div>
