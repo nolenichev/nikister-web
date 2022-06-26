@@ -21,14 +21,10 @@ const About = () => {
 				<div className="card p-5 md:p-10">
 					<h2 className="title">Shortly About Me</h2>
 					<div className="card-2 mb-10">
-						<p className="text text-xl mb-2">
+						<p className="text text-xl">
 							{"//"} I am passionate about Programming and IT technologies. I am
 							always happy to learn something new. <br />
 							As for my hobbies, I am fond of GameDev, NFT and travelling.{" "}
-						</p>
-						<p className="text text-xl">
-						  {"//"} Work <span className="word">smart</span>, not{" "}
-							<span className="word">hard</span>
 						</p>
 					</div>
 					<Languages />

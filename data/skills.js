@@ -24,7 +24,7 @@ export const other = [
 	"I have a lot of snippets",
 	"Templating",
 	"REST APIs",
-	"Work with 3D (Blander)",
+	"Work with 3D (Blender)",
 ]
 export const techical = [
 	{

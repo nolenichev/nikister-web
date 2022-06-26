@@ -9,7 +9,11 @@ const Header = ({ pageTitle }) => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 	const links = sections.map((item, index) => {
 		return (
-			<a href={`#${item}`} className="text-hover" key={index}>
+			<a href={`#${item}`} className="text-hover" key={index}
+				onClick={() => {
+					setIsMenuOpen(false)
+				}}
+			>
 				{item}({item === "about" && `contacts`})
 			</a>
 		)
