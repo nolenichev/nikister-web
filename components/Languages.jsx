@@ -8,9 +8,9 @@ import cz from "../img/flags/cz.svg"
 
 const flags = [us, ru, cz, sp]
 
-const ProgressCircle = ({ percentage = 0, title, img }) => {
+const ProgressCircle = ({ percentage = 0, title, img, index }) => {
 	return (
-		<div className="relative bg-black rounded-3xl w-full p-1 md:p- xl:p-5">
+		<div className="relative bg-black rounded-3xl w-full p-1 md:p- xl:p-5" data-aos="zoom-out-up" data-aos-delay={index * 100}>
 			<CircularProgressbar
 				value={percentage}
 				text={title}
@@ -33,7 +33,7 @@ const ProgressCircle = ({ percentage = 0, title, img }) => {
 const Languages = ({flex = "row"}) => {
 	const langs = data.map((item, index) => {
 		return (
-			<ProgressCircle img={flags[index]} percentage={item.level} key={index} />
+			<ProgressCircle img={flags[index]} percentage={item.level} key={index} index={index} />
 		)
 	})
 

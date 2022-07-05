@@ -2,7 +2,7 @@ import Image from "next/image"
 import { useState } from "react"
 import { BiLinkExternal } from "react-icons/bi"
 
-const Project = ({ project }) => {
+const Project = ({ project, isOdd }) => {
 	const { title, images, year, positions, link } = project
 	const [image, setImage] = useState(images[0])
 	const positionsList = positions.map((item, index) => {
@@ -17,7 +17,7 @@ const Project = ({ project }) => {
 	})
 
 	return (
-		<div className="bg-black rounded-3xl p-2 pb-1">
+		<div className="bg-black rounded-3xl p-2 pb-1" data-aos="zoom-out-up" data-aos-delay={isOdd && 150}>
 			<div className="flex justify-between px-2 mb-2">
 				<div className="flex items-center gap-3">
 					<div className="flex gap-1">

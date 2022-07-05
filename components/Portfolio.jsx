@@ -3,7 +3,8 @@ import Project from "./Project"
 
 const Portfolio = ({}) => {
 	const projectsGrid = projects.map((project, index) => {
-		return <Project project={project} key={index} />
+		const isOdd = index % 2 === 1
+		return <Project project={project} key={index} isOdd={isOdd} />
 	})
 
 	return (

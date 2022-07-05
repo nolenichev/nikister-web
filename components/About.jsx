@@ -20,7 +20,7 @@ const About = () => {
 			<section className="flex flex-col justify-between flex-2">
 				<div className="card p-5 md:p-10">
 					<h2 className="title">Shortly About Me</h2>
-					<div className="card-2 mb-10">
+					<div className="card-2 mb-10" data-aos="zoom-out-up">
 						<p className="text text-xl">
 							{"//"} I am passionate about Programming and IT technologies. I am
 							always happy to learn something new. <br />
@@ -31,7 +31,7 @@ const About = () => {
 				</div>
 				<div className="card p-5 md:p-10 flex-1">
 					<h2 className="title">What I can do</h2>
-					<ul className="list-none text-lg flex flex-col gap-1 card-2">
+					<ul className="list-none text-lg flex flex-col gap-1 card-2" data-aos="zoom-out-up">
 						{skill}
 					</ul>
 				</div>
