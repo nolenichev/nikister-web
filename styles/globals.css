@@ -35,10 +35,6 @@ body {
   scroll-margin: 100px;
 }
 
-/* .card {
-  @apply bg-white rounded-3xl bg-opacity-10 backdrop-blur-md mb-5 md:mb-10;
-} */
-
 .card {
   @apply rounded-3xl mb-5 md:mb-10;
   background: #191A1B;

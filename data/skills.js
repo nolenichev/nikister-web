@@ -1,10 +1,15 @@
-import { FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa"
+import { FaCss3, FaHardHat, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa"
 import { SiTailwindcss } from "react-icons/si"
 import { FcGoogle } from "react-icons/fc"
 import { DiRuby } from "react-icons/di"
 import { CgFigma } from "react-icons/cg"
 import { BsGithub } from "react-icons/bs"
 import { RiDatabase2Fill } from "react-icons/ri"
+import { AiFillApi } from "react-icons/ai"
+import { BsFileEarmarkCodeFill } from "react-icons/bs"
+import { FaYarn } from "react-icons/fa"
+import { HiTemplate } from "react-icons/hi"
+import { SiSolidity } from "react-icons/si"
 
 export const soft = [
 	"Logical thinking",
@@ -16,15 +21,13 @@ export const soft = [
 ]
 export const other = [
 	"UI / UX",
+	"Web3",
+	"yarn",
 	"Adaptive / Responsive Design",
 	"Vercel, Heroku - Deployment",
 	"Functional Programming",
-	"OOP",
-	"yarn",
-	"I have a lot of snippets",
-	"Templating",
-	"REST APIs",
 	"Work with 3D (Blender)",
+	"OOP",
 ]
 export const techical = [
 	{
@@ -53,26 +56,15 @@ export const techical = [
 	},
 	{
 		title: "NODE.JS",
-		percentage: 30,
+		percentage: 35,
 		iconColor: "79C62D",
 		icon: FaNodeJs,
 	},
 	{
-		title: "FIGMA",
-		percentage: 80,
-		iconColor: "A259FF",
-		icon: CgFigma,
-	},
-	{
-		title: "TAILWIND.CSS",
-		percentage: 95,
-		iconColor: "00B9AC",
-		icon: SiTailwindcss,
-	},
-	{
-		title: "GIT",
-		percentage: 90,
-		icon: BsGithub,
+		title: "Solidity",
+		percentage: 55,
+		iconColor: "707070",
+		icon: SiSolidity,
 	},
 	{
 		title: "RUBY ON RAILS",
@@ -91,5 +83,48 @@ export const techical = [
 		percentage: 100,
 		iconColor: "EF652A",
 		icon: FcGoogle,
+	},
+]
+
+export const cards = [
+	{
+		title: "YARN",
+		color: "2B87B2",
+		icon: FaYarn,
+	},
+	{
+		title: "Figma",
+		color: "A259FF",
+		icon: CgFigma,
+	},
+	{
+		title: "GIT",
+		color: "FFFFFF",
+		icon: BsGithub,
+	},
+	{
+		title: "Tailwind",
+		color: "00B9AC",
+		icon: SiTailwindcss,
+	},
+	{
+		title: "Hardhat",
+		color: "F1E509",
+		icon: FaHardHat,
+	},
+	{
+		title: "REST API",
+		color: "91C3F0",
+		icon: AiFillApi,
+	},
+	{
+		title: "Templating",
+		color: "A1F949",
+		icon: HiTemplate,
+	},
+	{
+		title: "Snippets",
+		color: "7E84F3",
+		icon: BsFileEarmarkCodeFill,
 	},
 ]
