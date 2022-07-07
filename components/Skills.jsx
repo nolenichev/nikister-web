@@ -50,7 +50,7 @@ const SkillCard = ({ item }) => {
 	const { icon, title, color } = item
 
 	return (
-		<div className="w-14 md:w-32 flex gap-3 flex-col text-center justify-center items-center">
+		<div className="flex gap-3 flex-col text-center justify-center items-center w-12 md:w-fit">
 			<span className="text-3xl md:text-5xl" style={{ color: `#${color}` }}>
 				{icon()}
 			</span>
@@ -96,7 +96,7 @@ const Skills = () => {
 				{techicalSkills}
 			</div>
 			<h2 className="title mt-10">Also…</h2>
-			<div className="flex flex-wrap gap-10 card-2 justify-center">
+			<div className="flex flex-wrap gap-x-12 gap-y-10 card-2 justify-center">
 				{cardsList}
 			</div>
 			<div className="flex flex-col md:flex-row mt-10 gap-10">
