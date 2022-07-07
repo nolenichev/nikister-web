@@ -96,7 +96,10 @@ const Skills = () => {
 				{techicalSkills}
 			</div>
 			<h2 className="title mt-10">Also…</h2>
-			<div className="flex flex-wrap gap-x-12 gap-y-10 card-2 justify-center">
+			<div
+				className="flex flex-wrap gap-x-12 gap-y-10 card-2 justify-center"
+				data-aos="zoom-out-up"
+			>
 				{cardsList}
 			</div>
 			<div className="flex flex-col md:flex-row mt-10 gap-10">
