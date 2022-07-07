@@ -1,14 +1,12 @@
-import { FaCss3, FaHardHat, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa"
-import { SiTailwindcss } from "react-icons/si"
+import { FaCss3, FaHardHat, FaHtml5, FaJs, FaNodeJs, FaReact, FaEthereum, FaYarn } from "react-icons/fa"
+import { SiTailwindcss, SiBlender } from "react-icons/si"
 import { FcGoogle } from "react-icons/fc"
 import { DiRuby } from "react-icons/di"
 import { CgFigma } from "react-icons/cg"
 import { BsGithub } from "react-icons/bs"
 import { RiDatabase2Fill } from "react-icons/ri"
 import { AiFillApi } from "react-icons/ai"
-import { BsFileEarmarkCodeFill } from "react-icons/bs"
-import { FaYarn } from "react-icons/fa"
-import { HiTemplate } from "react-icons/hi"
+import { CgIfDesign } from "react-icons/cg"
 import { SiSolidity } from "react-icons/si"
 
 export const soft = [
@@ -19,16 +17,16 @@ export const soft = [
 	"Creative",
 	"Sociable",
 ]
+
 export const other = [
-	"UI / UX",
-	"Web3",
-	"yarn",
-	"Adaptive / Responsive Design",
-	"Vercel, Heroku - Deployment",
-	"Functional Programming",
-	"Work with 3D (Blender)",
 	"OOP",
+	"Templating",
+	"Code snippets",
+	"Functional Programming",
+	"Vercel, Heroku - Deployment",
+	"Adaptive / Responsive Design",
 ]
+
 export const techical = [
 	{
 		title: "HTML5",
@@ -62,13 +60,13 @@ export const techical = [
 	},
 	{
 		title: "Solidity",
-		percentage: 55,
+		percentage: 60,
 		iconColor: "707070",
 		icon: SiSolidity,
 	},
 	{
 		title: "RUBY ON RAILS",
-		percentage: 20,
+		percentage: 25,
 		iconColor: "FF5252",
 		icon: DiRuby,
 	},
@@ -88,7 +86,7 @@ export const techical = [
 
 export const cards = [
 	{
-		title: "YARN",
+		title: "yarn",
 		color: "2B87B2",
 		icon: FaYarn,
 	},
@@ -113,18 +111,23 @@ export const cards = [
 		icon: FaHardHat,
 	},
 	{
-		title: "REST API",
+		title: "API",
 		color: "91C3F0",
 		icon: AiFillApi,
 	},
 	{
-		title: "Templating",
+		title: "UI / UX",
 		color: "A1F949",
-		icon: HiTemplate,
+		icon: CgIfDesign,
 	},
 	{
-		title: "Snippets",
-		color: "7E84F3",
-		icon: BsFileEarmarkCodeFill,
+		title: "Blender",
+		color: "F38217",
+		icon: SiBlender,
+	},
+	{
+		title: "Web3",
+		color: "FFFFFF",
+		icon: FaEthereum,
 	},
 ]

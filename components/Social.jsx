@@ -11,7 +11,7 @@ const SocialLink = ({ children, link }) => {
 			href={link}
 			rel="noreferrer"
 			target="_blank"
-			className="w-9 h-9 bg-color rounded-full flex items-center justify-center hover:text-white relative text-black text-xl"
+			className="w-10 h-10 bg-color rounded-full flex items-center justify-center hover:text-white relative text-black text-2xl"
 		>
 			{children}
 		</a>
@@ -30,7 +30,7 @@ function Social({}) {
 		})
 
 	return (
-		<div className="flex gap-4 reltaive md:absolute top-4 mb-2 md:right-4">
+		<div className="flex gap-5">
 			{links}
 		</div>
 	)

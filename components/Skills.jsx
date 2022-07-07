@@ -1,4 +1,7 @@
+import Image from "next/image"
 import { techical, cards, soft, other } from "../data/skills"
+import about2 from "../img/about2.png"
+import about3 from "../img/about3.png"
 
 const ProgressBar = ({
 	percentage = 0,
@@ -43,19 +46,15 @@ const ProgressBar = ({
 	)
 }
 
-const SkillCard = ({ item, index }) => {
+const SkillCard = ({ item }) => {
 	const { icon, title, color } = item
 
 	return (
-		<div
-			className="bg-black rounded-3xl p-3 w-full flex gap-3 flex-col text-center justify-center items-center"
-			data-aos="zoom-out-up"
-			data-aos-delay={index * 50}
-		>
-			<span className="text-4xl" style={{ color: `#${color}` }}>
+		<div className="w-14 md:w-32 flex gap-3 flex-col text-center justify-center items-center">
+			<span className="text-3xl md:text-5xl" style={{ color: `#${color}` }}>
 				{icon()}
 			</span>
-			<span className="font-bold font-text">{title}</span>
+			<span className="font-bold text-sm font-text">{title}</span>
 		</div>
 	)
 }
@@ -84,7 +83,7 @@ const Skills = () => {
 	})
 
 	const cardsList = cards.map((item, index) => {
-		return <SkillCard item={item} key={index} index={index} />
+		return <SkillCard item={item} key={index} />
 	})
 
 	return (
@@ -96,23 +95,38 @@ const Skills = () => {
 			>
 				{techicalSkills}
 			</div>
-			<div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-6">{cardsList}</div>
-			<div className="flex flex-col md:flex-row mt-14 gap-10">
-				<div className="flex-1">
-					<h2 className="title">Soft Skills</h2>
-					<ul className="text card-2" data-aos="zoom-out-up">
-						{skillsList(soft)}
-					</ul>
-				</div>
+			<h2 className="title mt-10">Also…</h2>
+			<div className="flex flex-wrap gap-10 card-2 justify-center">
+				{cardsList}
+			</div>
+			<div className="flex flex-col md:flex-row mt-10 gap-10">
 				<div className="flex-1">
 					<h2 className="title">Other Skills</h2>
-					<ul
-						className="text card-2"
-						data-aos="zoom-out-up"
-						data-aos-delay="150"
-					>
-						{skillsList(other)}
-					</ul>
+					<div className="relative" data-aos="zoom-out-up">
+						<ul className="text card-2">{skillsList(other)}</ul>
+						<div className="absolute top-6 right-6 w-1/3">
+							<Image
+								src={about3}
+								alt="about"
+								placeholder="blur"
+								className="relative w-full"
+							/>
+						</div>
+					</div>
+				</div>
+				<div className="flex-1">
+					<h2 className="title">Soft Skills</h2>
+					<div className="relative" data-aos="zoom-out-up" data-aos-delay="150">
+						<ul className="text card-2">{skillsList(soft)}</ul>
+						<div className="absolute -bottom-1 right-6 w-1/3">
+							<Image
+								src={about2}
+								alt="about"
+								placeholder="blur"
+								className="relative w-full"
+							/>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

@@ -26,7 +26,7 @@ export default function Document() {
 				<meta name="twitter:description" content={description} />
 				<meta
 					name="keywords"
-					content="Nikita Olenichev, Nikister, frontend developer, web developer, web developer nikister, nikita olenichev personal website, nikister web, frontend developer prague, web developer prague"
+					content="nikita olenichev, nikita olenichev website, nikita olenichev freelancer, nikister, frontend developer, web developer, web developer nikister, nikita olenichev personal website, nikister web, frontend developer prague, web developer prague"
 				/>
 				<meta
 					name="og:image"

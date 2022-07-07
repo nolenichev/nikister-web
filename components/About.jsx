@@ -1,6 +1,8 @@
 import BasicInfo from "./BasicInfo"
 import personalInfo from "../data/personalInfo.json"
 import Languages from "./Languages"
+import Image from "next/image"
+import about from "../img/about.png"
 
 const About = () => {
 	const skill = personalInfo.todo.map((item, index) => {
@@ -31,9 +33,19 @@ const About = () => {
 				</div>
 				<div className="card p-5 md:p-10 flex-1">
 					<h2 className="title">What I can do</h2>
-					<ul className="list-none text-lg flex flex-col gap-1 card-2" data-aos="zoom-out-up">
-						{skill}
-					</ul>
+					<div className="relative" data-aos="zoom-out-up">
+						<ul className="list-none text-lg flex flex-col gap-1 card-2">
+							{skill}
+						</ul>
+						<div className="absolute -bottom-1 right-3 w-1/4">
+							<Image
+								src={about}
+								alt="about"
+								placeholder="blur"
+								className="relative w-full"
+							/>
+						</div>
+					</div>
 				</div>
 			</section>
 

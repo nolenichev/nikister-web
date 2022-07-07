@@ -5,6 +5,7 @@ import Skills from "../components/Skills"
 import { pageTitle } from "./_document"
 import Header from "../components/Header"
 import Portfolio from "../components/Portfolio"
+import Footer from "../components/Footer"
 
 const App = () => {
 	return (
@@ -16,6 +17,7 @@ const App = () => {
 				<About />
 				<Skills />
 				<Portfolio />
+				<Footer />
 			</main>
 		</>
 	)
